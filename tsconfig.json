@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"declarationMap": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"module": "ESNext",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"strict": true,
+		"strictFunctionTypes": false,
+		"target": "ES2021"
+	}
+}
