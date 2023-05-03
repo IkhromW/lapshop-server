@@ -1,34 +1,37 @@
 module.exports = {
 	extends: [
-		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended-requiring-type-checking',
 	],
 	overrides: [
 		{
-			files: "**/*.vue",
-			parser: "@vue-eslint/parser",
+			files: '**/*.vue',
+			parser: '@vue-eslint/parser',
 		},
 		{
-			files: "**/*.test.*",
+			files: '**/*.test.*',
 			rules: {
-				"@typescript-eslint/no-unsafe-call": "off",
+				'@typescript-eslint/no-unsafe-call': 'off',
 			},
 		},
 		{
 			extends: [
-				"plugin:@typescript-eslint/recommended-requiring-type-checking",
+				'plugin:@typescript-eslint/recommended-requiring-type-checking',
 			],
-			files: "**/*.ts*",
+			files: '**/*.ts*',
 			parserOptions: {
-				project: ["./tsconfig.json"],
+				project: ['./tsconfig.json'],
 				tsconfigRootDir: __dirname,
 			},
 		},
 	],
-	parser: "@typescript-eslint/parser",
-	plugins: ["@typescript-eslint"],
-	parser: "@typescript-eslint/parser",
+	rules: {
+		'@typescript-eslint/no-explicit-any': ['off'],
+	},
+	parser: '@typescript-eslint/parser',
+	plugins: ['@typescript-eslint'],
+	parser: '@typescript-eslint/parser',
 
 	root: true,
 };

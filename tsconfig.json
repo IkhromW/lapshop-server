@@ -9,6 +9,11 @@
 		"outDir": "./dist",
 		"strict": true,
 		"strictFunctionTypes": false,
-		"target": "ES2021"
+		"target": "ES2021",
+		"moduleResolution": "node"
+	},
+	"ts-node": {
+		// Tell ts-node CLI to install the --loader automatically
+		"esm": true
 	}
 }
